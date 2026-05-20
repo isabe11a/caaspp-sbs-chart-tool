@@ -28,7 +28,7 @@ The notebook creates files you can upload to Google Sheets:
 After you upload this repo to GitHub, update this link with your GitHub username and repo name:
 
 ```text
-https://colab.research.google.com/github/YOUR_USERNAME/caaspp-sbs-chart-tool/blob/main/notebooks/caaspp_sbs_gap_charts.ipynb
+https://colab.research.google.com/github/isabe11a/caaspp-sbs-chart-tool/blob/main/notebooks/caaspp_sbs_gap_charts.ipynb
 ```
 
 Then share that Colab link with other chapters.
