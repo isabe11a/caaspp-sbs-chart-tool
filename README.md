@@ -1,83 +1,82 @@
-# CAASPP SBS Chart Tool
+# CAASPP SBS Table Maker
 
-This tool helps California parent/community groups make CAASPP charts for a school district.
+This tool helps California parent/community groups turn public CAASPP files into Google-Sheets-ready CSV and Excel tables for a school district.
 
-You do **not** need to install Python. The easiest way is to open the notebook in Google Colab, upload the CAASPP ZIP files you downloaded, and download chart-ready spreadsheets.
+You do **not** need to install Python. The easiest way is to open the notebook in Google Colab, upload the CAASPP ZIP files you downloaded, and download the finished CSV or Excel file.
 
 ## What this makes
 
-The notebook creates files you can upload to Google Sheets:
+The notebook creates two versions of the same table:
 
-- a time-series table for CAASPP percent met/exceeded
-- an audit table showing exactly which CAASPP rows were used
-- a SED/NSED gap table for bar charts
-- one Excel workbook with all of the above
+```text
+YOUR_PREFIX_caaspp_sed_nsed_met_above.csv
+YOUR_PREFIX_caaspp_sed_nsed_met_above.xlsx
+```
+
+For example:
+
+```text
+lvusd_caaspp_sed_nsed_met_above.csv
+lvusd_caaspp_sed_nsed_met_above.xlsx
+```
+
+Both files have the same table:
+
+- rows = academic years
+- columns = grade, SED/NSED group, and subject
+- values = percent met or exceeded standard
+
+Chapters can upload either file to Google Sheets and make whatever charts or analysis they want. The CSV is usually best for Google Sheets; the Excel file is included because it may feel more familiar to some users.
 
 ## What you need before you start
 
 1. Your district's county code and district code.
-   - Example: Las Virgenes Unified = county `19`, district `64683`
-   - Example: San Marcos Unified = county `37`, district `73791`
+   - Example: Las Virgenes Unified = county `19`, district `64683`, file prefix `lvusd`
+   - Example: San Marcos Unified = county `37`, district `73791`, file prefix `smusd`
 2. CAASPP Smarter Balanced districtwide files from the CAASPP website.
    - Choose **All Student Groups**.
    - ZIP files are okay. Do not unzip them unless you want to.
    - Caret-delimited, comma-delimited, and fixed-width text files are supported.
 
-## Easiest option: run online in Google Colab
+## Run online in Google Colab
 
 After you upload this repo to GitHub, update this link with your GitHub username and repo name:
 
 ```text
-https://colab.research.google.com/github/isabe11a/caaspp-sbs-chart-tool/blob/main/notebooks/caaspp_sbs_gap_charts.ipynb
+https://colab.research.google.com/github/YOUR_USERNAME/caaspp-sbs-table-maker/blob/main/notebooks/caaspp_sbs_table_maker.ipynb
 ```
 
 Then share that Colab link with other chapters.
 
 In Colab, users will:
 
-1. Click **Open in Colab**.
+1. Open the notebook.
 2. Run each step from top to bottom.
 3. Upload their CAASPP ZIP files when prompted.
-4. Type in their district name, county code, and district code.
-5. Download the finished CSV/XLSX files.
-6. Upload the XLSX to Google Sheets and make charts.
+4. Type in their district name, county code, district code, and short output prefix.
+5. Download the finished CSV or Excel file.
+6. Upload the CSV to Google Sheets.
 
 The uploaded CAASPP files go to the user's temporary Colab session, **not** to your Google Drive.
 
 ## Suggested screenshots to add
 
-You may want to add screenshots to your README or notebook showing:
+You may want to add screenshots showing:
 
 1. Where to click **Open in Colab**.
 2. The Colab **play button** next to each step.
 3. The file upload box.
 4. The district settings cell.
-5. The downloaded output files.
-6. Uploading the XLSX to Google Sheets.
+5. The downloaded CSV and Excel files.
+6. Uploading the CSV or Excel file to Google Sheets.
 
-## Chart labels
+## Basic chart labels
 
-For proficiency charts:
+For proficiency-over-time charts:
 
 - X-axis: `Academic Year`
 - Y-axis: `Percent Met or Exceeded Standard`
 
-For SED/NSED gap charts:
-
-- X-axis: `Grade Level` or `Academic Year`
-- Y-axis: `NSED–SED Gap, percentage points`
-
 ## Important caveat
 
 These are grade-level snapshots, not the same students followed over time. Small districts and small SED subgroups can be noisy, so look for patterns that repeat across multiple grades, subjects, or years.
-
-## For advanced users
-
-Advanced users can also run this locally:
-
-```bash
-pip install -r requirements.txt
-jupyter notebook
-```
-
-Most users should use Google Colab instead.
