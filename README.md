@@ -16,8 +16,8 @@ YOUR_PREFIX_caaspp_sed_nsed_met_above.xlsx
 For example:
 
 ```text
-lvusd_caaspp_sed_nsed_met_above.csv
-lvusd_caaspp_sed_nsed_met_above.xlsx
+lausd_caaspp_sed_nsed_met_above.csv
+lausd_caaspp_sed_nsed_met_above.xlsx
 ```
 
 Both files have the same table:
