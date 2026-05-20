@@ -31,8 +31,8 @@ Chapters can upload either file to Google Sheets and make whatever charts or ana
 ## What you need before you start
 
 1. Your district's county code and district code.
-   - Example: Las Virgenes Unified = county `19`, district `64683`, file prefix `lvusd`
    - Example: San Marcos Unified = county `37`, district `73791`, file prefix `smusd`
+   - Example: Las Virgenes Unified = county `19`, district `64683`, file prefix `lvusd`
 2. CAASPP Smarter Balanced districtwide files from the CAASPP website.
    - Choose **All Student Groups**.
    - ZIP files are okay. Do not unzip them unless you want to.
@@ -58,17 +58,6 @@ In Colab, users will:
 6. Upload the CSV to Google Sheets.
 
 The uploaded CAASPP files go to the user's temporary Colab session, **not** to your Google Drive.
-
-## Suggested screenshots to add
-
-You may want to add screenshots showing:
-
-1. Where to click **Open in Colab**.
-2. The Colab **play button** next to each step.
-3. The file upload box.
-4. The district settings cell.
-5. The downloaded CSV and Excel files.
-6. Uploading the CSV or Excel file to Google Sheets.
 
 ## Basic chart labels
 
