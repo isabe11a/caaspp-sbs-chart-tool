@@ -80,3 +80,8 @@ For proficiency-over-time charts:
 ## Important caveat
 
 These are grade-level snapshots, not the same students followed over time. Small districts and small SED subgroups can be noisy, so look for patterns that repeat across multiple grades, subjects, or years.
+
+
+## Note about `entities` files
+
+Files with `entities` in the filename are lookup/reference files, not score files. They may help you find school codes, but they do not replace the yearly Smarter Balanced **All Student Groups** score files.
