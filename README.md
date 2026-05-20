@@ -59,17 +59,6 @@ In Colab, users will:
 
 The uploaded CAASPP files go to the user's temporary Colab session, **not** to your Google Drive.
 
-## Suggested screenshots to add
-
-You may want to add screenshots showing:
-
-1. Where to click **Open in Colab**.
-2. The Colab **play button** next to each step.
-3. The file upload box.
-4. The district settings cell.
-5. The downloaded CSV and Excel files.
-6. Uploading the CSV or Excel file to Google Sheets.
-
 ## Basic chart labels
 
 For proficiency-over-time charts:
