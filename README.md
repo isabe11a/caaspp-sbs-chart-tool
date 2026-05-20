@@ -28,6 +28,20 @@ Both files have the same table:
 
 Chapters can upload either file to Google Sheets and make whatever charts or analysis they want. The CSV is usually best for Google Sheets; the Excel file is included because it may feel more familiar to some users.
 
+## Where do I get the CAASPP files?
+
+Download the files from the [CAASPP Smarter Balanced Research Files page](https://caaspp-elpac.ets.org/caaspp/ResearchFileListSB).
+
+On that page, use the **Countywide/Districtwide Files** section. Select your county and district, then download the **Districtwide research file, All Student Groups** file.
+
+Do **not** use the statewide files at the top unless you know you need the entire statewide dataset.
+
+<p align="center">
+  <img src="docs/screenshots/caaspp_research_files_page.png"
+       alt="CAASPP research files page showing that users should choose Countywide/Districtwide Files, not Statewide Files"
+       width="650">
+</p>
+
 ## What you need before you start
 
 1. Your district's county code and district code.
