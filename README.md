@@ -43,7 +43,7 @@ Chapters can upload either file to Google Sheets and make whatever charts or ana
 After you upload this repo to GitHub, update this link with your GitHub username and repo name:
 
 ```text
-https://colab.research.google.com/github/isabe11a/caaspp-sbs-table-maker/blob/main/notebooks/caaspp_sbs_table_maker.ipynb
+https://colab.research.google.com/github/isabe11a/caaspp-sbs-chart-tool/blob/main/notebooks/caaspp_sbs_table_maker.ipynb
 ```
 
 Then share that Colab link with other chapters.
