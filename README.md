@@ -45,8 +45,8 @@ Do **not** use the statewide files at the top unless you know you need the entir
 ## What you need before you start
 
 1. Your district's county code and district code.
+   - Example: Los Angeles Unified = county `19`, district `64733`, file prefix `lausd`
    - Example: San Marcos Unified = county `37`, district `73791`, file prefix `smusd`
-   - Example: Las Virgenes Unified = county `19`, district `64683`, file prefix `lvusd`
 2. CAASPP Smarter Balanced districtwide files from the CAASPP website.
    - Choose **All Student Groups**.
    - ZIP files are okay. Do not unzip them unless you want to.
